@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- <a href="#" class="logo"><span class="one">A</span>tullya</a> -->
+        <div class="logo"><img src="/img/logoo.png"></div>
+        <div class="navlist">
+            <ul>
+                <li>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">About</a></li>
+                     <li><a href="#">Service</a></li>
+                     <li><a href="#">Contact</a></li>
+                </li>
+            </ul>
+          
+        </div>
+        <button class="login-btn" id="openBtn"> Login</button>
+    </header>
+
+    <div class="card">
+        <div class="container-form">
+            <section class="loginCard">
+                <h2>Login</h2>
+                <form action="">
+                <div class="inputBox">
+                    <span class="iconBox"><i class='bx bx-envelope'></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="inputBox">
+                    <span class="iconBox"><i class='bx bxs-lock'></i></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="recovery-password">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="#">Recovery Password</a>
+            </div>
+            <button type="submit">Login</button>
+            <div class="registerDown">
+                <p>If you don't have an account? <a href="#" class="registerLink">Register Here</a></p>
+            </div>
+            </form>
+            </section>
+
+
+
+            <section class="registerCard">
+                <h2>Register</h2>
+                <form action="">
+                    <div class="inputBox">
+                        <span class="iconBox"><i class='bx bxs-user'></i></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                <div class="inputBox">
+                    <span class="iconBox"><i class='bx bx-envelope'></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="inputBox">
+                    <span class="iconBox"><i class='bx bxs-lock'></i></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="recovery-password">
+                <label><input type="checkbox">I accept all terms and conditions</label>
+             
+            </div>
+            <button type="submit">Register Now!!</button>
+            <div class="registerDown">
+                <p>I have an account <a href="#" class="loginLink">Login</a></p>
+            </div>
+            </form>
+            </section>
+            <div class="closeBtn"><i class='bx bx-x'></i></div>
+        </div>
+    </div>
+    <div class="bubble-background"></div>
+    <script src="script.js"></script>
+</body>
+</html>
