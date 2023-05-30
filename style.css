@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Signika+Negative:wght@300;400;500;600&family=Space+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    /* border: 2px solid green; */
+}
+body{
+    /* background: url(/img/6bddaa126094546ee4a60e5d6e7811a2.jpg); */
+    background-color: #171424;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    min-height: 100vh;
+    font-family: "Signika Nagative", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header img{
+    max-width: 100%;
+    width: 150px;
+    height: auto;
+}
+.logo{
+   height: 10vh;
+   margin-bottom: 5px;
+
+}
+.one{
+    font-size: 30px;
+    color: violet;
+}
+ul{
+    display: flex;
+    align-items: center;
+   
+}
+ul li{
+    margin-left: 2.5rem;
+    position: relative;
+
+}
+
+ul li a::after{
+    content: '';
+height: 3px;
+width: 0;
+background: #ff004f;
+position: absolute;
+left: 0;
+bottom: -6px;
+transition: 0.5s;
+}
+ul li a:hover::after{
+    width: 100%;
+     
+}
+ul li a{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.login-btn{
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    background: transparent;
+    color: white;
+    padding: 6px 24px;
+    border: 2px solid white;
+    border-radius: .5rem;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 1; 
+    overflow: hidden;
+   
+}
+.login-btn:hover{
+    color:#16116a;
+}
+.login-btn::after{
+    content: "a";
+    position: absolute;
+    
+    background: #fff;
+    padding: 2rem 1 rem;
+    display: block;
+    transition: all ease .65s;
+    left: -50%;
+    right: -50%;
+    top:-50%; 
+    line-height: 8.34rem;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0,0); 
+}
+.login-btn:hover::after{
+    transform: scale(-1,-1);
+}
+.card{
+    position: fixed;
+    margin-top: 100px;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+backdrop-filter: blur(.8rem);
+border: 2px solid white;
+border-radius: 1.5rem ;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all .4s ease-out;
+position: relative;
+opacity: 0;
+transform: scale(1.1);
+}
+.card.show{
+    opacity: 1;
+}
+section{
+    padding: 2.5rem;
+    width: 100%;
+}
+section h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+form .inputBox{
+    position: relative;
+    border-bottom: 2px solid white;
+    width: 100%;
+    height: 2rem;
+    margin-top: 2rem;
+    /* border: 2px solid black; */
+    font-size: 1rem;
+}
+.inputBox input{
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid green;  */
+    padding: 0 30px;
+}
+.inputBox label{
+position: absolute;
+left: 2px;
+top: 50%;
+transform: translateY(-50%);
+font-size: 1rem;
+transition: all ease .45s;
+pointer-events: none;
+}
+.inputBox span{
+    position: absolute;
+    top: 7px;
+    right:0;
+}
+.inputBox span i{
+    font-size: 1.3rem;
+
+}
+
+.inputBox input:focus~label,
+.inputBox input:valid~label{
+    top:-3px;
+}
+.recovery-password{
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: .9rem;
+margin: 10px 0;
+
+}
+.recovery-password label input{
+    margin-right: 5px;
+}
+.recovery-password a{
+    letter-spacing: 1px;
+}
+.recovery-password a:hover{
+    text-decoration: underline;
+}
+
+form button{
+    width: 100%;
+    color: blueviolet;
+    border: none;
+    padding: 14px 0;
+    margin: 1rem auto;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.registerDown{
+    text-align: center;
+    font-size: .9rem;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.registerDown p a{
+    letter-spacing: 1px;
+
+}
+.registerLink{
+    color: #ff004f;
+}
+.registerDown p a:hover{
+  text-decoration: underline;
+    
+}
+.closeBtn{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    background: white;
+    padding:5px;
+    border-radius: 20px 5px 5px 5px;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.closeBtn i{
+color: #16116a;
+font-size: 1.3rem;
+font-weight: 600;
+}
+.container-form{
+    width: 100%;
+}
+.container-form .registerCard{
+    display: none;
+}
+.container-form.active .registerCard{
+
+display: block;
+}
+
+.container-form.active .loginCard{
+
+    display: none;
+}
+
+
+/* bubble css*/  
+ 
+.bubble {
+    position: absolute;
+    bottom: -50px;
+    background-color: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+    animation: bubble 70s linear infinite;
+  }
+  
+  .bubble::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.255) translate(-70%, -70%);
+    background: radial-gradient(rgba(255, 255, 255, 0.5), transparent);
+    border-radius: 50%;
+  }
+  
+  @keyframes bubble {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    99% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh);
+      opacity: 0;
+    }
+  }
